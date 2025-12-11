@@ -4,7 +4,7 @@ import useFetch from "../useFetch";
 const Book = () => {
   const [successMessage, setSuccessMessage] = useState('')
 
-  const { data, loading, error } = useFetch("http://localhost:3000/books");
+  const { data, loading, error } = useFetch("https://bi-1-3-hw-1-be.vercel.app/books/");
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading books</p>;
