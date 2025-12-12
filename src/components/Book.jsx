@@ -21,7 +21,7 @@ const Book = () => {
 
   const handleDelete = async (bookId) => {
     try {
-      const response = await fetch(`http://localhost:3000/books/${bookId}`, {
+      const response = await fetch(`https://bi-1-3-hw-1-be.vercel.app/${bookId}`, {
         method: "DELETE"
       },
     )
