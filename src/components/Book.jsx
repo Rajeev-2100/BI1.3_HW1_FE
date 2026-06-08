@@ -4,7 +4,7 @@ import useFetch from "../useFetch";
 const Book = () => {
   const [successMessage, setSuccessMessage] = useState('')
 
-  const { data, loading, error } = useFetch("https://bi-1-3-hw-1-be.vercel.app/books/");
+  const { data, loading, error } = useFetch("https://bi-1-3-hw-1-be-u4eh.vercel.app/books/");
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading books</p>;
@@ -21,7 +21,7 @@ const Book = () => {
 
   const handleDelete = async (bookId) => {
     try {
-      const response = await fetch(`https://bi-1-3-hw-1-be.vercel.app/books/${bookId}`, {
+      const response = await fetch(`https://bi-1-3-hw-1-be-u4eh.vercel.app/books/${bookId}`, {
         method: "DELETE"
       },
     )
